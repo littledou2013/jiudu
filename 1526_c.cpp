@@ -20,14 +20,14 @@ int main(void)
 		for (i = 0; i < m; ++i)
 		{
 			scanf("%d%d", &a, &b);
-      while (root[a] != -1)
-           a = root[a];
-       while (root[b] != -1)
-            b = root[b];
-			if (a < b)
-				root[a] = b;
-      if (a > b)
-         root[b] = a;
+	        while (root[a] != -1)
+	           a = root[a];
+	        while (root[b] != -1)
+	            b = root[b];
+		if (a < b)
+		root[a] = b;
+                if (a > b)
+                root[b] = a;
 		}
 		int count = 0;
 		for (i = 1; i <= n; ++i)
